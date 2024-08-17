@@ -1,0 +1,394 @@
+*{
+	margin:0;
+	padding:0;
+	font-family:sans-serif;
+}
+.mainbody{
+    height:100vh;
+    width:100%;
+    background:url(2.jpg);
+    background-position:center;
+    background-size:cover;
+    color:#fff;
+    overflow-x:hidden;
+    position: relative;
+}
+.pro{
+	clip-path: circle();
+}
+nav{
+	display:flex;
+	padding:20px 100px;
+	align-items:center;
+}
+nav ul{
+	text-align:right;
+	display:inline;
+	list-style:none;
+	flex:1;
+}
+nav ul li{
+	display:inline-block;
+	margin:0 30px;
+}
+.yes{margin:11% 15%;
+text-align:center;
+}
+div.so h4{
+	margin:0% 44%;
+	align-items:center;
+	animation: animate 8s linear infinite;
+}
+div.so h6{
+
+	align-items:center;
+}
+.container{
+	height:150px;
+	margin: auto;
+	position:relative;
+	width:90%;
+	display:grid;
+	place-items:center;
+	overflow: hidden;
+}
+.slide-container{
+	display:flex;
+	width:calc(250px * 18);
+	animation:scroll 20s linear infinite;
+}
+@keyframes scroll{
+	0%{
+		transform: translateX(0);
+	}
+	100%{
+		transform: translateX(calc(-250px *9));
+	}
+}
+.slide-image{
+	height:100px;
+	width:150px;
+	display:flex;
+	align-items:center;
+	padding:15px;
+	perspective:100px;
+}
+.photo{
+	width:100%;
+	transition:transform 1s;
+}
+.photo:hover
+{
+	transform:translateZ(20px);
+}
+.so ul{
+	text-align:right;
+	display:inline;
+	list-style:none;
+	flex:1;
+}
+.so ul li{
+	font-size: 26px;
+	display:inline-block;
+	margin:0px 0px;
+}
+.so ul li img{
+	width:30px;
+	height: 20px;
+}
+/*---------------- about tab----------------------*/
+.pi{
+	background-color: #566573;
+}
+.gmm {
+    border-radius: 60px 10px 60px 10px;
+    width: 80%;
+    height: 100%;
+    background-color: white;
+    margin-top: 50px;
+    margin-left: 200px;
+    box-shadow: 8px 6px 10px black;
+    border: 3px solid #a488dfe8;
+}
+.ged {
+    float: right;
+    margin-top: 10px;
+    margin-left: 150px;
+    padding-right: 20px;
+    font: italic bold 20px 25px georgia,serif;
+}
+.hty {
+    background-color: white;
+    width: 600px;
+    text-align: center;
+    border: 3px solid black;
+    border-radius: 30px 0px 30px 0px;
+    margin-top: 15px;
+    margin-left: 450px;
+    box-shadow: 8px 6px 10px black;
+    color: black;
+    font-family: sofia;
+    font-size: 30px;
+}
+
+
+/*------------------ image tab--------------------*/
+.imagebody{
+	background-color: #a488dfe8;
+}
+.pcontainer{
+	max-width: 1220px;
+	margin-left: 50px;
+	margin-right: 50px;
+	margin-top: 40px;
+	background: black;
+	overflow: auto;
+}
+.imagecontainer{
+	max-width: 1300px;
+	margin: auto;
+	background: black;
+	overflow: auto;
+}
+.pgallery{
+	margin: 5px;
+	border: 5px solid #ccc;
+	float: left;
+	width: 390px;
+	height: 320px;
+}
+.pgallery img{
+	width: 380px;
+	height: 200px;
+}
+.gallery{
+	margin: 20px;
+	border: 5px solid #ccc;
+	float: left;
+	width: 390px;
+	height: 280px;
+}
+.Fgallery{
+	margin: 20px;
+	border: 5px solid #ccc;
+	float: left;
+	width: 1250px;
+	height: 580px;
+}
+.Fgallery img{
+	width: 1240px;
+	height: 460px;
+}
+.gallery img{
+	width: 380px;
+	height: 200px;
+}
+.desc{
+	padding: 15px;
+	text-align: center;
+	color: #fff;
+}
+
+/*---------------- contact tab--------------------*/
+/* General Styles */
+
+.contactbody {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(cont1.jpg);
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+  overflow-x: hidden;
+  position: relative;
+}
+
+fieldset {
+  border: 6px solid #cccccc;
+  margin: 0 auto;
+  padding: 2em;
+  width: 90%;
+  max-width: 800px;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+fieldset legend {
+  color: red;
+}
+
+textarea {
+  width: calc(100% - 18px);
+  border: 1px solid #ccc;
+  outline: none;
+  padding: 7px;
+  box-sizing: border-box;
+}
+
+/* Navigation Bar */
+.topnav {
+  overflow: hidden;
+  background-color: #111523;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+  text-align: center;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #170f0d7d;
+  color: white;
+}
+
+/* Social Media Section */
+.so {
+  background-color: #a488dfe8;
+  padding: 1em;
+  text-align: center;
+}
+
+.so ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.so ul li {
+  font-size: 20px;
+  margin: 0 15px;
+}
+
+.so ul li img {
+  width: 30px;
+  height: 20px;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+.so h5, .so h6 {
+  color: white;
+  margin: 0.5em 0;
+}
+
+/* Slider */
+.slider {
+  width: 100%;
+  height: 500px;
+  background: url(slide1.jpg) no-repeat center center;
+  background-size: cover;
+  margin-top: auto;
+  animation: slide 15s infinite;
+}
+
+@keyframes slide {
+  25% { background: url(slide1.jpg); }
+  50% { background: url(slide2.jpg); }
+  75% { background: url(f1.jpg); }
+  100% { background: url(f2.jpg); }
+}
+
+.container {
+  height: 250px;
+  width: 95%;
+  display: grid;
+  overflow: hidden;
+  margin: 0 auto;
+  position: relative;
+}
+
+.slide-container {
+  display: flex;
+  height: 200px;
+  animation: scroll 20s linear infinite;
+}
+
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(calc(-200px * 9)); }
+}
+
+.slide-image {
+  height: 200px;
+  width: 200px;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  perspective: 100px;
+}
+
+.photo {
+  width: 100%;
+  transition: transform 1s;
+}
+
+.photo:hover {
+  transform: translateZ(20px);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .topnav a {
+      float: none;
+      display: block;
+      text-align: left;
+  }
+
+  fieldset {
+      width: 90%;
+      padding: 1em;
+  }
+
+  textarea {
+      width: 100%;
+  }
+
+  .so ul {
+      flex-direction: column;
+  }
+
+  .so ul li {
+      font-size: 18px;
+      margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .topnav a {
+      font-size: 14px;
+      padding: 10px;
+  }
+
+  fieldset {
+      width: 95%;
+  }
+
+  textarea {
+      width: 100%;
+  }
+
+  .slider {
+      height: 300px;
+  }
+
+  .slide-container {
+      height: 150px;
+  }
+
+  .slide-image {
+      height: 150px;
+      width: 150px;
+  }
+}
